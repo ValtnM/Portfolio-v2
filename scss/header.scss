@@ -1,0 +1,38 @@
+@use "variables";
+
+.header-container {
+  background: variables.$secondary-color;
+}
+
+.header {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    max-height: 100px;
+  }
+
+  &__navbar {
+    ul {
+      display: flex;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 0 10px;
+      color: variables.$primary-color;
+      font-size: 1.2rem;
+      &:hover {
+        color: variables.$tertiary-color;
+      }
+    }
+
+    a {
+        text-decoration: none;
+    }
+  }
+}
