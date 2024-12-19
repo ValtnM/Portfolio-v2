@@ -29,6 +29,11 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .header__navbar {
+    display: none;
+  }
+}
 *,
 *::before,
 *::after {
