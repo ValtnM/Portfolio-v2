@@ -65,4 +65,35 @@
   background: #c9c9c9;
 }
 
+@media screen and (max-width: 992px) {
+  .presentation {
+    font-size: 0.8rem;
+    max-width: none;
+    padding: 20px;
+  }
+  .presentation h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .presentation {
+    margin: 20px 0;
+  }
+  .presentation__photo {
+    grid-column: 1/6;
+  }
+  .presentation__title {
+    grid-row: 2;
+    grid-column: 1/6;
+    text-align: center;
+    padding: 20px 0 10px 0;
+  }
+  .presentation__text {
+    grid-row: 3;
+  }
+  .presentation__link {
+    grid-column: 2/5;
+  }
+}
+
 /*# sourceMappingURL=presentation.css.map */
