@@ -325,6 +325,25 @@ swiper-slide img {
   grid-column: 5/7;
 }
 
+@media screen and (max-width: 992px) {
+  .skills__description.front-end {
+    grid-column: 1/7;
+  }
+  .skills__description.back-end {
+    grid-column: 1/7;
+    grid-row: 3;
+  }
+  .skills__description.other {
+    grid-column: 1/7;
+    grid-row: 4;
+  }
+}
+@media screen and (max-width: 576px) {
+  .skills {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 *,
 *::before,
 *::after {
