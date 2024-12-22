@@ -1,0 +1,66 @@
+@use "variables";
+
+.skills-container {
+  width: 100%;
+  background: variables.$secondary-color;
+
+  h3 {
+    font-family: variables.$secondary-font;
+    font-size: 2.5rem;
+    color: variables.$primary-color;
+    margin: 40px 0;
+    grid-row: 1;
+  }
+}
+
+.skills {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+
+  &__description {
+    grid-row: 2;
+    background: variables.$primary-color;
+    padding: 20px;
+    border-radius: 10px;
+
+    h4 {
+      font-family: variables.$secondary-font;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.4rem;
+    }
+
+    ul {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            list-style-type: none;
+            margin-right: 15px;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: variables.$primary-color;
+            background: variables.$secondary-color;
+        }
+    }
+  }
+
+  .front-end {
+    grid-column: 1/3;
+  }
+  .back-end {
+    grid-column: 3/5;
+  }
+  .other {
+    grid-column: 5/7;
+  }
+}
