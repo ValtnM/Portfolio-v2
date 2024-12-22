@@ -1,0 +1,89 @@
+.formations-container {
+  width: 100%;
+  background: #333333;
+}
+
+.formations {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+}
+.formations h3 {
+  font-family: "Cabin";
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 40px 0;
+  grid-row: 1;
+}
+.formations__formation-overview {
+  grid-row: 2;
+  text-align: center;
+  padding: 20px 10px;
+  background: #c9c9c9;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.formations__formation-overview:nth-of-type(1) {
+  grid-column: 1/3;
+}
+.formations__formation-overview:nth-of-type(2) {
+  grid-column: 3/5;
+}
+.formations__formation-overview:nth-of-type(3) {
+  grid-column: 5/7;
+}
+.formations__formation-overview:hover {
+  background: #fff;
+}
+.formations__formation-overview.visible {
+  background: #fff;
+}
+.formations__formation-overview img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.formations__formation-overview h4 {
+  font-size: 1.3rem;
+  margin-bottom: 7px;
+}
+.formations__formation-overview p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+.formations__formation-description {
+  display: none;
+  grid-row: 3;
+  grid-column: 1/7;
+  margin-top: 50px;
+  padding: 30px;
+  background: #fff;
+  border: 2px solid #c9c9c9;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.formations__formation-description.visible {
+  display: block;
+}
+.formations__formation-description p {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .formations {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .formations .formations__formation-overview {
+    display: none;
+  }
+  .formations .formations__formation-description {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=formations.css.map */
