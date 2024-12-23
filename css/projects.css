@@ -1,0 +1,118 @@
+.projects-container {
+  width: 100%;
+  background: #333333;
+}
+
+.projects {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px;
+}
+.projects h3 {
+  font-family: "Cabin";
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 40px 0;
+  grid-row: 1;
+}
+.projects h4 {
+  font-family: "Cabin";
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.projects swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.projects swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.projects swiper-slide.swiper-slide-active .slide-filter {
+  display: block;
+}
+.projects swiper-slide .slide-filter {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.projects swiper-slide .slide-filter__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.projects swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.projects .project {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.projects .project.visible {
+  display: grid;
+}
+.projects .project img {
+  width: 100%;
+  grid-column: 1/2;
+}
+.projects .project-description {
+  grid-column: 2/4;
+  padding: 0 20px;
+}
+.projects .project-description h4 {
+  font-size: 1.7rem;
+}
+.projects .project-description ul {
+  display: flex;
+}
+.projects .project-description ul li {
+  list-style-type: none;
+  margin: 0 15px 10px 0;
+  padding: 5px 10px;
+  background: #333333;
+  color: #fff;
+  border-radius: 5px;
+}
+.projects .project-description__text {
+  margin-top: 20px;
+}
+.projects .project-description__text p {
+  margin-bottom: 15px;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+.projects .project-description__links {
+  margin-top: 30px;
+}
+.projects .project-description__links a {
+  text-decoration: none;
+  color: #fff;
+  background: #0d6efd;
+  margin-right: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.projects .project-description__links a:hover {
+  background: #333333;
+}
+.projects .project-description__links a i {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=projects.css.map */

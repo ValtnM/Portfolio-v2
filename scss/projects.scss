@@ -1,0 +1,135 @@
+@use "variables";
+
+.projects-container {
+  width: 100%;
+  background: variables.$secondary-color;
+}
+
+.projects {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px;
+  h3 {
+    font-family: variables.$secondary-font;
+    font-size: 2.5rem;
+    color: variables.$primary-color;
+    margin: 40px 0;
+    grid-row: 1;
+  }
+
+  h4 {
+    font-family: variables.$secondary-font;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  swiper-slide {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+    &.swiper-slide-active .slide-filter {
+      display: block;
+    }
+
+    .slide-filter {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      background: rgba(0, 0, 0, 0.7);
+
+      &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        color: white;
+        text-align: center;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .project {
+    display: none;
+    // display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background: variables.$primary-color;
+    padding: 30px;
+    border-radius: 10px;
+
+    &.visible {
+      display: grid;
+    }
+
+    img {
+      width: 100%;
+      grid-column: 1/2;
+    }
+
+    &-description {
+      grid-column: 2/4;
+      padding: 0 20px;
+
+      h4 {
+        font-size: 1.7rem;
+      }
+      ul {
+        display: flex;
+        li {
+          list-style-type: none;
+          margin: 0 15px 10px 0;
+          padding: 5px 10px;
+          background: variables.$secondary-color;
+          color: variables.$primary-color;
+          border-radius: 5px;
+        }
+      }
+
+      &__text {
+        margin-top: 20px;
+        p {
+          margin-bottom: 15px;
+          text-align: justify;
+          letter-spacing: 0.3px;
+        }
+      }
+
+      &__links {
+        margin-top: 30px;
+        a {
+            text-decoration: none;
+            color: variables.$primary-color;
+            background: variables.$quartenary-color;
+            margin-right: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            &:hover {
+                background: variables.$secondary-color;
+            }
+            i {
+                margin-right: 10px;
+            }
+        }
+      }
+    }
+  }
+}

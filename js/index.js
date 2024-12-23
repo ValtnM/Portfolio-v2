@@ -55,3 +55,58 @@ cdaOverviewElement.addEventListener("click", () => {
     fullstackDevelopperOverviewElement.classList.remove("visible");
   }
 });
+
+const swiperContainer = document.querySelector(".projects swiper-container");
+
+const slideReserviaElement = document.querySelectorAll(
+  ".projects swiper-slide"
+)[0];
+const slideCineambul72Element = document.querySelectorAll(
+  ".projects swiper-slide"
+)[1];
+const slideStefMetalArtElement = document.querySelectorAll(
+  ".projects swiper-slide"
+)[2];
+
+const projectReserviaElement = document.querySelectorAll(".project")[0];
+const projectCineambul72Element = document.querySelectorAll(".project")[1];
+const projectStefMetalArtElement = document.querySelectorAll(".project")[2];
+
+const slideProjectElements = document.querySelectorAll(
+  ".projects swiper-slide"
+);
+const descriptionProjectElements = document.querySelectorAll(".project");
+
+// Création d'une instance de MutationObserver
+// Permet de détecter le changement de classe d'un élément
+const observer = new MutationObserver((mutationsList) => {
+  mutationsList.forEach((mutation) => {
+    if (mutation.type === "attributes" && mutation.attributeName === "class") {
+      slideProjectElements.forEach((slide, index) => {
+        if (slide.classList.contains("swiper-slide-active")) {
+          descriptionProjectElements.forEach((description, i) => {
+            if (i === index) {
+              console.log('Ajouté', i);
+              
+              description.classList.add("visible");
+            } else {
+              console.log('Enlevé', i);
+              description.classList.remove("visible");
+            }
+          });
+        }
+      });
+
+      
+    }
+  });
+});
+
+
+const config = { attributes: true }; // Observer les changements d'attributs
+
+// Écoute sur toutes les slides
+slideProjectElements.forEach((slideElement) => {
+  observer.observe(slideElement, config);
+});
+
