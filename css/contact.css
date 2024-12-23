@@ -1,0 +1,106 @@
+.contact-container {
+  width: 100%;
+  background: #333333;
+}
+
+.contact {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.contact h3 {
+  font-family: "Cabin";
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 40px 0;
+  grid-row: 1;
+}
+.contact a {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact a:hover {
+  background: #c9c9c9;
+}
+.contact a .icon {
+  grid-column: 1/2;
+}
+.contact a i {
+  color: #fff;
+  background: #095cd7;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.contact a h5 {
+  grid-column: 2/6;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+.contact .email {
+  grid-column: 1/2;
+}
+.contact .linkedin {
+  grid-column: 2/3;
+}
+.contact .github {
+  grid-column: 3/4;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact a {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .contact a i {
+    grid-column: auto;
+  }
+  .contact a h5 {
+    grid-row: 2;
+    grid-column: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact h3 {
+    margin-bottom: 10px;
+  }
+  .contact a {
+    grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+  }
+  .contact a i {
+    grid-column: 1/2;
+  }
+  .contact a h5 {
+    grid-row: 1;
+    grid-column: 2/6;
+    font-size: 1rem;
+  }
+  .contact a.email {
+    grid-row: 2;
+    grid-column: auto;
+  }
+  .contact a.linkedin {
+    grid-row: 3;
+    grid-column: auto;
+  }
+  .contact a.github {
+    grid-row: 4;
+    grid-column: auto;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
