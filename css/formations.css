@@ -4,7 +4,7 @@
 }
 
 .formations {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: auto;
   padding: 50px;
   display: grid;
@@ -58,13 +58,12 @@
   display: none;
   grid-row: 3;
   grid-column: 1/7;
-  margin-top: 50px;
   padding: 30px;
   background: #fff;
   border: 2px solid #c9c9c9;
   border-radius: 10px;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .formations__formation-description.visible {
   display: block;
