@@ -128,8 +128,11 @@
   .projects {
     padding: 20px;
   }
+  .projects h3 {
+    margin-bottom: 0;
+  }
   .projects swiper-container {
-    padding-top: 0;
+    padding-top: 20px;
   }
   .projects .project {
     padding: 20px 10px;

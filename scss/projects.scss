@@ -148,8 +148,12 @@
 @media screen and (max-width: 576px) {
   .projects {
     padding: 20px;
+
+    h3 {
+      margin-bottom: 0;
+    }
     swiper-container {
-      padding-top: 0;
+      padding-top: 20px;
     }
     .project {
       padding: 20px 10px;

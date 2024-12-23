@@ -128,6 +128,9 @@
   .formations {
     width: 100%;
     padding: 0 20px;
+    h3 {
+      margin-bottom: 0;
+    }
     .formations__formation-overview {
       display: none;
     }
@@ -136,6 +139,7 @@
     }
     swiper-container {
       display: block;
+      background: variables.$primary-color;
     }
   }
 }
