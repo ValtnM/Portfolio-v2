@@ -588,6 +588,23 @@
     grid-column: auto;
   }
 }
+.footer-container {
+  background: #333333;
+}
+
+.footer {
+  max-width: 1600px;
+  margin: auto;
+  padding: 100px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin: auto;
+  max-height: 100px;
+}
+
 *,
 *::before,
 *::after {
