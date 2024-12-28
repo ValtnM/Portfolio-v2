@@ -19,6 +19,7 @@
     color: variables.$primary-color;
     margin: 40px 0;
     grid-row: 1;
+    text-shadow: variables.$box-shadow;
   }
 
   a {
@@ -29,6 +30,7 @@
     background: variables.$primary-color;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: variables.$box-shadow;
     cursor: pointer;
     
     &:hover {

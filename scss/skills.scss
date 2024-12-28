@@ -10,6 +10,7 @@
     color: variables.$primary-color;
     margin: 40px 0;
     grid-row: 1;
+    text-shadow: variables.$box-shadow;
   }
 }
 
@@ -26,6 +27,8 @@
     background: variables.$primary-color;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: variables.$box-shadow;
+
 
     h4 {
       font-family: variables.$secondary-font;

@@ -17,14 +17,15 @@
   color: #fff;
   margin: 40px 0;
   grid-row: 1;
+  text-shadow: 3px 6.1px 6.1px hsla(0, 0%, 0%, 0.41);
 }
 .formations__formation-overview {
   grid-row: 2;
   text-align: center;
   padding: 20px 10px;
   background: #c9c9c9;
-  border: 2px solid #fff;
   border-radius: 10px;
+  box-shadow: 3px 6.1px 6.1px hsla(0, 0%, 0%, 0.41);
   cursor: pointer;
 }
 .formations__formation-overview:nth-of-type(1) {
@@ -60,8 +61,8 @@
   grid-column: 1/7;
   padding: 30px;
   background: #fff;
-  border: 2px solid #c9c9c9;
   border-radius: 10px;
+  box-shadow: 3px 6.1px 6.1px hsla(0, 0%, 0%, 0.41);
   font-size: 1rem;
   line-height: 1.5rem;
 }

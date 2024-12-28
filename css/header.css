@@ -1,5 +1,6 @@
 .header-container {
   background: #333333;
+  box-shadow: 3px 6.1px 6.1px hsla(0, 0%, 0%, 0.41);
 }
 
 .header {
