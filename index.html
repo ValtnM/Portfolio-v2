@@ -57,7 +57,7 @@
               Après une reconversion professionnelle, je me suis tourné vers le
               développement web, un domaine qui allie technique, créativité et
               résolution de problèmes. J’ai suivi différentes formations, dont
-              une en Développement Fullstack, qui m’a permis de consolider mes
+              une en développement fullstack, qui m’a permis de consolider mes
               compétences et de découvrir des outils et technologies variés,
               aussi bien en front-end qu’en back-end.
             </p>
@@ -86,6 +86,15 @@
       <section id="formations" class="formations-container">
         <div class="formations">
           <h3>Formations</h3>
+          <div class="formations__formation-overview technician">
+            <img
+              src="assets/img/logo_openclassrooms.png"
+              alt="Logo sur fond bleu avec la lettre C en blanc et à l'envers"
+            />
+            <h4>Technicien Informatique</h4>
+            <p>Niveau 5 (Bac+2)</p>
+            <p>2019 - 2020</p>
+          </div>
           <div class="formations__formation-overview web-developper">
             <img
               src="assets/img/logo_openclassrooms.png"
@@ -104,7 +113,7 @@
             <p>Niveau 5 (Bac+2)</p>
             <p>2023 - 2024</p>
           </div>
-          <div class="formations__formation-overview cda visible">
+          <!-- <div class="formations__formation-overview cda visible">
             <img
               src="assets/img/logo_3wa.png"
               alt="Logo en forme d'écusson orange avec inscrit 3W Academy"
@@ -112,12 +121,32 @@
             <h4>Concepteur Développeur d'applications</h4>
             <p>Niveau 6 (Bac+3/+4)</p>
             <p>2024 - 2025</p>
+          </div> -->
+          <div class="formations__formation-description technician">
+            <p>
+              Dans le cadre d'une reconversion professionnelle et après avoir
+              exercé pendant quatre ans comme projectionniste de cinéma, j'ai
+              décidé de m'orienter vers l'informatique.
+            </p>
+            <p>
+              Elle a toujours fait partie de ma vie et, à travers cette
+              formation, j'ai souhaité mieux comprendre son fonctionnement afin
+              d'en faire, peut-être, mon métier. En réalisant divers projets,
+              j'ai découvert le quotidien d'un technicien informatique, les
+              qualités requises ainsi que les différents aspects du métier.
+            </p>
+            <p>
+              Au cours de mon apprentissage, j'ai notamment étudié le
+              fonctionnement des réseaux, les spécificités des différents
+              systèmes d'exploitation, la mise en place de serveurs Windows,
+              ainsi que la création de sites web avec WordPress.
+            </p>
           </div>
           <div class="formations__formation-description web-developper">
             <p>
-              Après avoir exercé 4 ans comme projectionniste de cinéma et fait
-              une première formation de Technicien informatique, j'ai décidé de
-              m'orienter vers le développement web.
+              Après avoir découvert plusieurs aspects de l'informatique dans ma
+              première formation, j'ai décidé de m'orienter vers le
+              développement web.
             </p>
             <p>
               Cette formation a été pour moi la découverte de mon premier
@@ -132,7 +161,9 @@
               complet pour mon projet final.
             </p>
           </div>
-          <div class="formations__formation-description fullstack-developper">
+          <div
+            class="formations__formation-description fullstack-developper visible"
+          >
             <p>
               J’ai suivi une formation de développeur fullstack en alternance,
               qui m’a permis de consolider mes compétences techniques tout en en
@@ -153,26 +184,37 @@
               acquises, de la conception à la réalisation finale.
             </p>
           </div>
-          <div class="formations__formation-description cda visible">
-            <p>
-              Pour poursuivre mon apprentissage dans les meilleurs conditions,
-              j'ai décidé de faire une nouvelle formation de Concepteur
-              Développeur d'application avec la 3W Academy.
-            </p>
-            <p>
-              Cette formation permet d'entrer un plus en détails dans les
-              différentes étapes du cycle de vie d'un projet. De l'étude des
-              besoins à la mise en production en passant par le développement et
-              la réalisation de tests.
-            </p>
-            <p>
-              Dans le cadre de cette formation en alternance, je suis
-              actuellement à la recherche d'une entreprise où effectuer mon
-              apprentissage. En attendant, je poursuis les cours tout en
-              m'exercant sur des projets personnels.
-            </p>
-          </div>
           <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide>
+              <div class="swiper-slide__header">
+                <img
+                  src="assets/img/logo_openclassrooms.png"
+                  alt="Logo sur fond bleu avec la lettre C en blanc et à l'envers"
+                />
+                <h4>Technicien Informatique</h4>
+                <p>Niveau 5 (Bac+2)</p>
+                <p>2019 - 2020</p>
+              </div>
+              <div class="swiper-slide__description">
+                <p>
+                  Dans le cadre d'une reconversion professionnelle et après
+                  avoir exercé pendant quatre ans comme projectionniste de
+                  cinéma, j'ai décidé de m'orienter vers l'informatique.
+                </p>
+                <p>
+                  Au cours de mon apprentissage, j'ai notamment étudié le
+                  fonctionnement des réseaux, les spécificités des différents
+                  systèmes d'exploitation, la mise en place de serveurs Windows,
+                  ainsi que la création de sites web avec WordPress.
+                </p>
+                <p>
+                  Au cours de mon apprentissage, j'ai notamment étudié le
+                  fonctionnement des réseaux, les spécificités des différents
+                  systèmes d'exploitation, la mise en place de serveurs Windows,
+                  ainsi que la création de sites web avec WordPress.
+                </p>
+              </div>
+            </swiper-slide>
             <swiper-slide>
               <div class="swiper-slide__header">
                 <img
@@ -233,36 +275,6 @@
                   projet m’a permis de mettre en pratique l’ensemble des
                   compétences acquises, de la conception à la réalisation
                   finale.
-                </p>
-              </div></swiper-slide
-            >
-            <swiper-slide
-              ><div class="swiper-slide__header">
-                <img
-                  src="assets/img/logo_3wa.png"
-                  alt="Logo en forme d'écusson orange avec inscrit 3W Academy"
-                />
-                <h4>Concepteur Développeur d'applications</h4>
-                <p>Niveau 6 (Bac+3/+4)</p>
-                <p>2024 - 2025</p>
-              </div>
-              <div class="swiper-slide__description">
-                <p>
-                  Pour poursuivre mon apprentissage dans les meilleurs
-                  conditions, j'ai décidé de faire une nouvelle formation de
-                  Concepteur Développeur d'application avec la 3W Academy.
-                </p>
-                <p>
-                  Cette formation permet d'entrer un plus en détails dans les
-                  différentes étapes du cycle de vie d'un projet. De l'étude des
-                  besoins à la mise en production en passant par le
-                  développement et la réalisation de tests.
-                </p>
-                <p>
-                  Dans le cadre de cette formation en alternance, je suis
-                  actuellement à la recherche d'une entreprise où effectuer mon
-                  apprentissage. En attendant, je poursuis les cours tout en
-                  m'exercant sur des projets personnels.
                 </p>
               </div></swiper-slide
             >
